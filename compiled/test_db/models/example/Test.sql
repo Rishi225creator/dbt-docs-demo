@@ -1,0 +1,4 @@
+
+
+SELECT 2 AS COL1,
+5 AS COL2

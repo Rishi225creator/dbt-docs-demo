@@ -1,0 +1,145 @@
+{
+    "metadata": {
+        "dbt_schema_version": "https://schemas.getdbt.com/dbt/catalog/v1.json",
+        "dbt_version": "1.5.0",
+        "generated_at": "2023-05-01T06:11:21.022077Z",
+        "invocation_id": "81c20f50-b701-4727-8e73-f1ef59e9c324",
+        "env": {}
+    },
+    "nodes": {
+        "model.test_db.Test": {
+            "metadata": {
+                "type": "BASE TABLE",
+                "schema": "PERSON",
+                "name": "TESTINC",
+                "database": "PERSONDB",
+                "comment": null,
+                "owner": "ACCOUNTADMIN"
+            },
+            "columns": {
+                "COL1": {
+                    "type": "NUMBER",
+                    "index": 1,
+                    "name": "COL1",
+                    "comment": null
+                },
+                "COL2": {
+                    "type": "NUMBER",
+                    "index": 2,
+                    "name": "COL2",
+                    "comment": null
+                }
+            },
+            "stats": {
+                "row_count": {
+                    "id": "row_count",
+                    "label": "Row Count",
+                    "value": 5.0,
+                    "include": true,
+                    "description": "An approximate count of rows in this table"
+                },
+                "bytes": {
+                    "id": "bytes",
+                    "label": "Approximate Size",
+                    "value": 1024.0,
+                    "include": true,
+                    "description": "Approximate size of the table as reported by Snowflake"
+                },
+                "last_modified": {
+                    "id": "last_modified",
+                    "label": "Last Modified",
+                    "value": "2023-05-01 05:46UTC",
+                    "include": true,
+                    "description": "The timestamp for last update/change"
+                },
+                "has_stats": {
+                    "id": "has_stats",
+                    "label": "Has Stats?",
+                    "value": true,
+                    "include": false,
+                    "description": "Indicates whether there are statistics for this table"
+                }
+            },
+            "unique_id": "model.test_db.Test"
+        },
+        "model.test_db.my_first_dbt_model": {
+            "metadata": {
+                "type": "BASE TABLE",
+                "schema": "PERSON",
+                "name": "MY_FIRST_DBT_MODEL",
+                "database": "PERSONDB",
+                "comment": null,
+                "owner": "ACCOUNTADMIN"
+            },
+            "columns": {
+                "ID": {
+                    "type": "NUMBER",
+                    "index": 1,
+                    "name": "ID",
+                    "comment": null
+                }
+            },
+            "stats": {
+                "row_count": {
+                    "id": "row_count",
+                    "label": "Row Count",
+                    "value": 2.0,
+                    "include": true,
+                    "description": "An approximate count of rows in this table"
+                },
+                "bytes": {
+                    "id": "bytes",
+                    "label": "Approximate Size",
+                    "value": 1024.0,
+                    "include": true,
+                    "description": "Approximate size of the table as reported by Snowflake"
+                },
+                "last_modified": {
+                    "id": "last_modified",
+                    "label": "Last Modified",
+                    "value": "2023-05-01 05:46UTC",
+                    "include": true,
+                    "description": "The timestamp for last update/change"
+                },
+                "has_stats": {
+                    "id": "has_stats",
+                    "label": "Has Stats?",
+                    "value": true,
+                    "include": false,
+                    "description": "Indicates whether there are statistics for this table"
+                }
+            },
+            "unique_id": "model.test_db.my_first_dbt_model"
+        },
+        "model.test_db.my_second_dbt_model": {
+            "metadata": {
+                "type": "VIEW",
+                "schema": "PERSON",
+                "name": "MY_SECOND_DBT_MODEL",
+                "database": "PERSONDB",
+                "comment": null,
+                "owner": "ACCOUNTADMIN"
+            },
+            "columns": {
+                "ID": {
+                    "type": "NUMBER",
+                    "index": 1,
+                    "name": "ID",
+                    "comment": null
+                }
+            },
+            "stats": {
+                "has_stats": {
+                    "id": "has_stats",
+                    "label": "Has Stats?",
+                    "value": false,
+                    "include": false,
+                    "description": "Indicates whether there are statistics for this table"
+                }
+            },
+            "unique_id": "model.test_db.my_second_dbt_model"
+        }
+    },
+    "sources": {},
+    "errors": null
+}
